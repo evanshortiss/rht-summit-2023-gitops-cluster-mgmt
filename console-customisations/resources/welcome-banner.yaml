@@ -1,0 +1,12 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleNotification
+metadata:
+  name: welcome-banner
+spec:
+  backgroundColor: '#EE0000'
+  color: '#fff'
+  link:
+    href: https://www.redhat.com/en/summit
+    text: (Event Information)
+  location: BannerTop
+  text: Welcome to Red Hat Summit 2023!

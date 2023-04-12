@@ -8,7 +8,7 @@ spec:
     namespace: ''
     server: 'https://kubernetes.default.svc'
   source:
-    path: namespaces
+    path: namespaces/resources
     repoURL: 'https://github.com/evanshortiss/rht-summit-2023-gitops-cluster-mgmt'
     targetRevision: HEAD
     directory:
