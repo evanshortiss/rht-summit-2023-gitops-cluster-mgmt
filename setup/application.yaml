@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: Managed Namespaces
+  name: managed-namespaces
 spec:
   destination:
     name: ''
@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: namespaces
-    repoURL: 'git@github.com:evanshortiss/rht-summit-2023-gitops-cluster-mgmt.git'
+    repoURL: 'https://github.com/evanshortiss/rht-summit-2023-gitops-cluster-mgmt'
     targetRevision: HEAD
     directory:
       recurse: true
