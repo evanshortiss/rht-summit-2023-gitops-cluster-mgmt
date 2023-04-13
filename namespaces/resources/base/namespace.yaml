@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: for-replacement
+  annotations:
+    # Ensures that this is the first resource applied in a sync
+    argocd.argoproj.io/sync-wave: "-1"
+  labels:
+    # Permit the OpenShift GitOps instance to manage this namespace
+    argocd.argoproj.io/managed-by: openshift-gitops

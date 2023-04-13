@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: example-ns
-  labels:
-    # Permit this OpenShift GitOps instance to manage the namespace
-    argocd.argoproj.io/managed-by: openshift-gitops

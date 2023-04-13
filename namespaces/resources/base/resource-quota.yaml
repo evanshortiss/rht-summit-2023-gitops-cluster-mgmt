@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: resource-quota
+  namespace: for-replacement
+  annotations:
+    # Ensures that this resource will be applied after the namespace
+    argocd.argoproj.io/sync-wave: "0"
+spec:
+  hard:
+    cpu: "2"
+    memory: 2Gi
+    storage: 10Gi
+    services: "5"
+    pods: "10"  
+    persistentvolumeclaims: "10"
+  scopes:
+  - NotTerminating
+  - BestEffort
+  - Terminating
