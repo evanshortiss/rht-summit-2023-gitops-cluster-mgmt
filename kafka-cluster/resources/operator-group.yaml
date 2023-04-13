@@ -7,4 +7,6 @@ metadata:
     argocd.argoproj.io/sync-wave: "0"
 spec:
   targetNamespaces:
-  - kafka-cluster
+    - kafka-cluster
+  upgradeStrategy: Default
+
