@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ResourceQuota
 metadata:
-  name: resource-quota
+  name: resource-quota-memory-cpu
   namespace: for-replacement
   annotations:
     # Ensures that this resource will be applied after the namespace
@@ -10,7 +10,5 @@ spec:
   hard:
     cpu: "2"
     memory: 2Gi
-    services: "5"
-    pods: "10"
   scopes:
   - NotTerminating
