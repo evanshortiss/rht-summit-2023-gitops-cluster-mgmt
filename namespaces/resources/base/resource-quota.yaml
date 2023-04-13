@@ -10,9 +10,7 @@ spec:
   hard:
     cpu: "2"
     memory: 2Gi
-    storage: 10Gi
     services: "5"
     pods: "10"
-    persistentvolumeclaims: "10"
   scopes:
   - NotTerminating
