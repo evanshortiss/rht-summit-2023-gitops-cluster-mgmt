@@ -8,14 +8,12 @@ spec:
     namespace: ''
     server: 'https://kubernetes.default.svc'
   source:
-    path: namespaces/resources
+    path: namespaces/resources/overlays
     repoURL: 'https://github.com/evanshortiss/rht-summit-2023-gitops-cluster-mgmt'
     targetRevision: HEAD
-    directory:
-      recurse: true
   project: default
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: true
       syncInterval: 1m
