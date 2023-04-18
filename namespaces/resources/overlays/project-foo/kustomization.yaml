@@ -4,7 +4,6 @@ kind: Kustomization
 namespace: project-foo
 bases:
 - ../../base
-- ./roles.yaml
 
 patches:
 - target:
