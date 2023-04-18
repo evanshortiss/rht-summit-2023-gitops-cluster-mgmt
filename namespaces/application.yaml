@@ -16,4 +16,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-      syncInterval: 1m
