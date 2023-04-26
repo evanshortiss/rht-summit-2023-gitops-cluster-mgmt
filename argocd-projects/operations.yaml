@@ -1,0 +1,7 @@
+# Creates a Group named "application-ops" that contains just the "bar" user
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: application-ops
+users:
+  - bar

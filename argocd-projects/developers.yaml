@@ -1,0 +1,7 @@
+# Creates a Group named "application-dev" that contains just the "foo" user
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: application-dev
+users:
+  - foo
