@@ -6,10 +6,10 @@ spec:
   destination:
     name: ''
     namespace: ''
-    server: 'https://kubernetes.default.svc'
+    server: {{ .Values.spec.destination.server }}
   source:
-    path: namespaces/resources/overlays
-    repoURL: 'https://github.com/evanshortiss/rht-summit-2023-gitops-cluster-mgmt'
+    path: managed-namespaces/overlays
+    repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: HEAD
   project: default
   syncPolicy:

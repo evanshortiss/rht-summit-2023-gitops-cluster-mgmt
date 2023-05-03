@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: project-memes-dev
+bases:
+- ../../base
+
+# Patches are edits to make to a set of one or more targets
+patches:
+# This patch targets the Namespace resource and changes the
+# value of metadata.name to "project-memes-dev"
+- target:
+    kind: Namespace
+    name: for-replacement
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: project-memes-dev

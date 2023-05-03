@@ -1,0 +1,11 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: workshop-repository
+spec:
+  applicationMenu:
+    imageURL: https://github.com/favicon.ico
+    section: Red Hat Summmit 2023
+  href: https://github.com/evanshortiss/rht-summit-2023-gitops-cluster-mgmt/
+  location: ApplicationMenu
+  text: Cluster GitOps Repository
