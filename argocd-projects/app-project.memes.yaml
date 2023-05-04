@@ -9,7 +9,7 @@ metadata:
 spec:
   # Allow the creation of certain cluster scoped resources if desired. This
   # is not enabled in this example, since this AppProject is only concerned
-  # with managing resources in the "project-foo" namespace!
+  # with managing resources in the "project-memes-*" namespaces!
   # clusterResourceWhitelist:
   #   - group: '*'
   #     kind: '*'
