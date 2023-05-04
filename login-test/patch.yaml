@@ -1,0 +1,25 @@
+apiVersion: redhatcop.redhat.io/v1alpha1
+kind: Patch
+metadata:
+  name: custom-login-page
+  namespace: openshift-config
+spec:
+  serviceAccountRef:
+    name: default
+  patches:
+    custom-login-page:
+      targetObjectRef:
+        apiVersion: config.openshift.io/v1
+        kind: OAuth
+        name: cluster
+      patchTemplate: |
+        spec:
+          templates:
+            login:
+              name: login-template            
+      patchType: application/merge-patch+json
+      sourceObjectRefs:
+      - apiVersion: v1
+        kind: Secret
+        name: login-template
+        namespace: openshift-config
