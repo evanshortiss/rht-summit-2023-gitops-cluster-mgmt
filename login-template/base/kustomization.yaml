@@ -8,4 +8,4 @@ secretGenerator:
   options:
     disableNameSuffixHash: true
   files:
-    - login/login.html
+    - html/login.html
