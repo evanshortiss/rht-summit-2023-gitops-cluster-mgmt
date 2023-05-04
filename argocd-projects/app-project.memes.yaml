@@ -27,7 +27,7 @@ spec:
         # This refers to a Group defined by the user.openshift.io/v1 API
         # https://docs.openshift.com/container-platform/4.12/rest_api/user_and_group_apis/user-and-group-apis-index.html
         - application-dev
-      name: foo-development
+      name: memes-development
       # Policies defied using Argo CD RBAC policies:
       # https://argo-cd.readthedocs.io/en/stable/operator-manual/rbac/
       policies:
@@ -72,7 +72,7 @@ spec:
     - description: Provides the operations group with access to both development and production
       groups:
         - application-ops
-      name: foo-operations
+      name: memes-operations
       policies:
         - >-
           p, proj:project-memes:memes-operations, applications, get,
