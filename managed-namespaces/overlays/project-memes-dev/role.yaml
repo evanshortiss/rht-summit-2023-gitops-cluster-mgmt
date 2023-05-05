@@ -1,0 +1,17 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: memes-dev-editors
+  namespace: project-memes-dev
+roleRef:
+  # The role being bound. In this case we're re-using the existing
+  # edit role that's defined at cluster scope
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: edit
+subjects:
+  # Make user "foo" a subject of this role, thus granting
+  # them edit access in the project-memes-dev namespace
+  - kind: User
+    name: foo
+    namespace: project-memes-dev

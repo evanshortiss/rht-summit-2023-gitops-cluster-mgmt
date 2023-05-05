@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: project-memes-dev
 bases:
 - ../../base
+- role.yaml
 
 # Patches are edits to make to a set of one or more targets
 patches:
