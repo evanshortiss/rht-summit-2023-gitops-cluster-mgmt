@@ -6,8 +6,7 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    name: ''
-    namespace: ''
+    namespace: 'openshift-gitops'
     server: {{ .Values.spec.destination.server }}
   source:
     path: argocd-projects/
