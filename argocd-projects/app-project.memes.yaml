@@ -93,5 +93,6 @@ spec:
           p, proj:project-memes:memes-operations, applications, override,
           project-memes/*, allow
   sourceRepos:
-    # Allowed repositories. This AppProjected is limited to just one repository
-    - 'https://github.com/evanshortiss/rht-summit-2023-sample-application'
+    # Allowed repositories. It's set to a wildcard for this lab, but should
+    # be restricted to specific repos in a real-world scenario.
+    - '*'
