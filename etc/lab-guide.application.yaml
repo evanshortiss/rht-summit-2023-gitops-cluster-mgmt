@@ -5,7 +5,7 @@ metadata:
 spec:
   destination:
     name: ''
-    namespace: ''
+    namespace: 'lab-guide'
     server: 'https://kubernetes.default.svc'
   source:
     path: lab-guide/
