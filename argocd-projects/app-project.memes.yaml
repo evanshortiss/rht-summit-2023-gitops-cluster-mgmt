@@ -34,41 +34,41 @@ spec:
         # Rules for the development environment/application
         - >-
           p, proj:project-memes:memes-development, applications, get,
-          project-memes/development, allow
+          project-memes/random-meme-dev, allow
         - >-
           p, proj:project-memes:memes-development, applications, create,
-          project-memes/development, allow
+          project-memes/random-meme-dev, allow
         - >-
           p, proj:project-memes:memes-development, applications, update,
-          project-memes/development, allow
+          project-memes/random-meme-dev, allow
         - >-
           p, proj:project-memes:memes-development, applications, delete,
-          project-memes/development, allow
+          project-memes/random-meme-dev, allow
         - >-
           p, proj:project-memes:memes-development, applications, sync,
-          project-memes/development, allow
+          project-memes/random-meme-dev, allow
         - >-
           p, proj:project-memes:memes-development, applications, override,
-          project-memes/development, allow
+          project-memes/random-meme-dev, allow
         # Rules for the production environment/application
         - >-
           p, proj:project-memes:memes-development, applications, get,
-          project-memes/development, allow
+          project-memes/random-meme-dev, allow
         - >-
           p, proj:project-memes:memes-development, applications, create,
-          project-memes/production, deny
+          project-memes/random-meme-prod, deny
         - >-
           p, proj:project-memes:memes-development, applications, update,
-          project-memes/production, deny
+          project-memes/random-meme-prod, deny
         - >-
           p, proj:project-memes:memes-development, applications, delete,
-          project-memes/production, deny
+          project-memes/random-meme-prod, deny
         - >-
           p, proj:project-memes:memes-development, applications, sync,
-          project-memes/production, deny
+          project-memes/random-meme-prod, deny
         - >-
           p, proj:project-memes:memes-development, applications, override,
-          project-memes/production, deny
+          project-memes/random-meme-prod, deny
     - description: Provides the operations group with access to both development and production
       groups:
         - application-ops
