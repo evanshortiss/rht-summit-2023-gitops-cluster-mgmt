@@ -1,0 +1,11 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: workshop-guide
+spec:
+  applicationMenu:
+    imageURL: https://yt3.googleusercontent.com/ytc/AGIKgqMtKIO3NFTUNqMrSUrHNeITzUB78YfZsGO46cwpmg=s900-c-k-c0x00ffffff-no-rj
+    section: Red Hat Summmit 2023
+  href: https://evanshortiss.com/rht-summit-2023-lab-guide/summit-2023-gitops-workshop-guide/main/m1-overview/intro.html
+  location: ApplicationMenu
+  text: Workshop Guide
